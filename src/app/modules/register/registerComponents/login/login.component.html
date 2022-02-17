@@ -1,4 +1,6 @@
 <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+<div *ngIf="registered" class="alert alert-success">registered successfully please login</div>
+
 <h2>Login</h2>
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
@@ -20,6 +22,6 @@
             <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
             Login
         </button>
-        <a routerLink="/register" class="btn btn-link">Register</a>
+        <a routerLink="/register/signup" class="btn btn-link">Register</a>
     </div>
 </form>
