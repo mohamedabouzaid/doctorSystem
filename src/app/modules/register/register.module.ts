@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './registerComponents/login/login.component';
 import { SignupComponent } from './registerComponents/signup/signup.component';
 import { RouterModule, Routes  } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
 
@@ -21,7 +24,10 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class RegisterModule { }
