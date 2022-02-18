@@ -6,11 +6,12 @@ import { RouterModule, Routes  } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthGuard } from 'src/app/gaurd/auth.guard';
 
 const routes: Routes = [
 
-  {path:'login',component:LoginComponent},
-  {path:'signup',component:SignupComponent},
+  {path:'login',component:LoginComponent },
+  {path:'signup',component:SignupComponent },
   {path:'',redirectTo:'login',pathMatch:'full'}
 
 
