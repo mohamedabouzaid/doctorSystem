@@ -1,1 +1,26 @@
-<p>home works!</p>
+
+<div *ngFor="let doctorProfile of doctors" >
+  <div class="card text-center">
+    <div class="card-header">
+      Dr:{{doctorProfile?.username}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">specialty:{{doctorProfile?.specialty}}</h5>
+      <p class="card-text"> location:{{doctorProfile?.location}}</p>
+      <p class="card-text">waiting:{{doctorProfile?.waiting}}</p>
+      <p class="card-text"> phone:{{doctorProfile?.phone}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer text-muted">
+      price:{{doctorProfile?.price}}
+    </div>
+  </div>
+<br>
+
+
+
+
+
+
+
+</div>

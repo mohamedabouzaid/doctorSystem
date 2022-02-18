@@ -17,10 +17,13 @@ profile(token:string){
 
   return this.http.get('http://localhost:3000/doctors/profile',{
     headers: {'authorization':token}
- });
+ });}
 
+ allDoctors(){
 
+  return this.http.get('http://localhost:3000/doctors/');
+ }
 }
 
 
-}
+
